@@ -1,7 +1,10 @@
 import React from 'react';
 import Book from './UI/Book';
+import { books } from "../data";
 
 const Featured = () => {
+    console.log(books);
+    console.log();
     return (
         <section id="features">
             <div className="conatiner">
@@ -10,6 +13,9 @@ const Featured = () => {
                         Featured <span className="purple">Books</span>
                     </h2>
                     <div className="books">
+                        {
+
+                        }
                         <Book />
                         <Book />
                         <Book />

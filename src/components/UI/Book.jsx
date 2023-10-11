@@ -1,12 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { books } from "../data";
 
 const Book = () => {
-    console.log(books);
-    function getFiveStarBooks() {
-        console.log(books.filter(book => book.rating === 5))
-    }
     return (
         <div className="book">
             <a href="">
