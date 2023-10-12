@@ -23,13 +23,17 @@ const Book = ({ book }) => {
          }
         </div>
         <div className="book__price">
-          {book.salePrice ? (
+            {book.salePrice ? (
             <>
               <span className="book__price--normal">${book.originalPrice.toFixed(2)}</span>
               ${book.salePrice.toFixed(2)}
             </>
           ) : (
-            <>${book.origionalPrice.toFixed(2)}</>
+            book.originalPrice ? (
+              <>${book.originalPrice.toFixed(2)}</>
+            ) : (
+              "Price not available"
+            )
           )}
         </div>
       </div>
